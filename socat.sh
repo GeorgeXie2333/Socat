@@ -204,8 +204,8 @@ config_socat(){
     echo -e "${Green}请选择转发类型：${Font}"
     echo "1. IPv4 端口转发"
     echo "2. IPv6 端口转发"
-    echo "3. 域名(DDNS) 端口转发 (IPv4优先)"
-    echo "4. 域名(DDNS) 端口转发 (IPv6优先)"
+    echo "3. IPv4 域名(DDNS)端口转发"
+    echo "4. IPv6 域名(DDNS)端口转发"
     read -p "请输入选项 [1-4]: " ip_version
 
     if [ "$ip_version" == "2" ] || [ "$ip_version" == "4" ]; then
